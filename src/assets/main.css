@@ -1,0 +1,50 @@
+
+@import "./base.css";
+
+:root {
+  --primary-color: #004d98;
+  --secondary-color: #0077cc;
+  --accent-color: #ff9800;
+  --background-color: #ebf5fb;
+  --text-color: #333333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebf5fb !important;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 77, 152, 0.05);
+}
+
+.container-fluid {
+  padding: 2rem;
+}
+
+.table {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 1rem;
+  }
+}
